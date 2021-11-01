@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 300;
+  color: #fff;
+}
+
+.page-container {
+  display: flex;
+  background-image: url("../Images/hero_day.jpg");
+  background-size: cover;
+  background-position: inherit;
+  transition: 0.3 ease-out;
+  min-height: 100vh;
+}
+.page-container.night {
+  background-image: url("../Images/hero_night.jpg");
+}
