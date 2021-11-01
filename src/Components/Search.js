@@ -97,7 +97,8 @@ const Search = ({ handleChange }) => {
 
   // to send data to App component
   useEffect(() => {
-    if (timeCity >= sunrise && timeCity < sunset) {
+    if (timeCity === "") handleChange("day");
+    else if (timeCity >= sunrise && timeCity < sunset) {
       handleChange("day");
     } else {
       handleChange("night");
