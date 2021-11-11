@@ -14,7 +14,7 @@ body {
   background-image: url("../Images/hero_day.jpg");
   background-size: cover;
   background-position: inherit;
-  transition: 0.3 ease-out;
+  transition: 0.4 ease-in-out;
   min-height: 100vh;
 }
 .page-container.night {

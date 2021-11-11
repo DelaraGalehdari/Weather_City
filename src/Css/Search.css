@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,21 +7,21 @@
 .search-city {
   max-width: 100%;
   /* margin: auto; */
-  margin-left: 22%;
+  margin-left: 28%;
   margin-top: 10%;
-  /* box-shadow: 0px 5px rgba(0, 0, 0, 0.2); */
 }
 .search {
   padding: 17px;
   font-size: 20px;
-  width: 60%;
-  border: none;
+  width: 50%;
+  border: 1px solid #51a8f0;
   float: left;
   background: linear-gradient(#ffffff, #eff2f3);
   background: -moz-linear-gradient(#ffffff, #eff2f3);
   background: -webkit-linear-gradient(#ffffff, #eff2f3);
-  border-radius: 20px 0 0 20px;
+  border-radius: 30px 0 0 30px;
   margin-top: 5%;
+  display: block;
 }
 
 /* .search:hover {
@@ -29,17 +30,17 @@
 
 button {
   float: left;
-  padding: 20px;
+  padding: 17px;
   background: linear-gradient(#d5e9f5, #51a8f0);
   background: -moz-linear-gradient(#d5e9f5, #51a8f0);
   background: -webkit-linear-gradient(#d5e9f5, #51a8f0);
-  color: white;
-  font-size: 15px;
+  color: rgb(8, 1, 43);
+  font-size: 20px;
   /* text-align: center; */
   /* align-content: center; */
-  border: none;
+  border: 1px solid #51a8f0;
   cursor: pointer;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 30px 30px 0;
   margin-top: 5%;
   padding-left: 14px;
 }
@@ -58,8 +59,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-content: space-around;
-  margin-left: 43%;
-  width: 20%;
 }
 .show-temp {
   flex: 1;
@@ -73,9 +72,9 @@ button:hover {
 }
 .show-sun {
   align-content: center;
-  margin-left: 40%;
   font-size: 50px;
   font-weight: 500s;
+  margin-top: 2%;
 }
 
 .alert {
@@ -100,56 +99,12 @@ button:hover {
 .closebtn:hover {
   color: black;
 }
-
-@media (max-width: 990px) {
-  .show-sun {
-    margin-left: 35%;
-  }
+.timezone {
+  margin-top: 5%;
+  font-size: 35px;
 }
-@media (max-width: 750px) {
-  .show-sun {
-    margin-left: 30%;
-  }
-  .show-weather {
-    margin-left: 35%;
-  }
-}
-@media (max-width: 650px) {
-  .show-sun {
-    margin-left: 25%;
-  }
-  .show-weather {
-    margin-left: 30%;
-  }
-}
-@media (max-width: 520px) {
-  .show-sun {
-    margin-left: 20%;
-  }
-  button {
-    font-size: 10px;
-  }
-  .search {
-    padding: 14px;
-  }
-}
-@media (max-width: 470px) {
-  .show-sun {
-    margin-left: 12%;
-  }
-  .show-weather {
-    margin-left: 20%;
-  }
-}
-@media (max-width: 390px) {
-  .show-sun {
-    margin-left: 20%;
-    font-size: 35px;
-  }
-  .show-weather {
-    margin-left: 22%;
-  }
-  .show-temp {
-    font-size: 40px;
-  }
+.container-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

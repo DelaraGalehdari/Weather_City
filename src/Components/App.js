@@ -8,7 +8,7 @@ const App = () => {
   };
 
   return (
-    <div className={day === "day" ? "page-container" : "page-container night"}>
+    <div className={day === "day" ? "page-container" : "page-container  night"}>
       <Search handleChange={handleChange} />
     </div>
   );
